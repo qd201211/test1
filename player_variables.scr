@@ -170,20 +170,20 @@ sub main()
     //Survivor sense	
 	Param("SurvivalSenseEnabled", "true");
 	Param("CanUseSenseWhenMoving", "true");
-	Param("SurvivorSenseCooldown", "0.5"); // sensor rest time in seconds   
+	Param("SurvivorSenseCooldown", "0.0"); // sensor rest time in seconds   
     Param("SurvivorSensePreparationTime", "0.05"); // hold time required to 'load' survivor sense
 	
 		// Visual
-    Param("SurvivorSenseRange",        "20.0"); // Range of visualization of sonar 
+    Param("SurvivorSenseRange",        "70.0"); // Range of visualization of sonar 
     Param("SurvivorSenseOpacity",      "1.0"); // Strength of visual effect set in range 0.0 - 1.0. It is a global variable that affects all visualizations. If you want to control the intensity of the effect per object/AI type use AlphaMax and AlhpaMin in survivor_sense_presets.scr
     Param("SurvivorSenseWaveDuration", "3.0"); //[s] how long we will see the "wave" (player cant activate another wave until this one is finished)
-    Param("SurvivorSenseIconDuration", "10.0"); //how long the objects icons will stay on screen
-    Param("SurvivorSenseAIDuration",   "10.0"); // how long AIs will be highlited
+    Param("SurvivorSenseIconDuration", "30.0"); //how long the objects icons will stay on screen
+    Param("SurvivorSenseAIDuration",   "30.0"); // how long AIs will be highlited
 
 		// Height
     Param("SurvivorSenseAIHeight",          "10.0"); //detection height for AIs
     Param("SurvivorSenseAIHeightInterior",  "4.0"); //detection height for AIs when they are in interior (buildings etc.)
-	Param("SurvivorSenseObjectHeight",      "10.0"); //detection height for other objects
+	Param("SurvivorSenseObjectHeight",      "30.0"); //detection height for other objects
     Param("SurvivorSenseObjectHeightInterior", "4.0"); //detection height for other objects when they are in interior (buildings etc.)
 
 		//detection ranges per icon type:
@@ -192,7 +192,7 @@ sub main()
     Param("SurvivorSenseRange_IconType_Fire",        "20.0");
     Param("SurvivorSenseRange_IconType_Damage",      "20.0");
     Param("SurvivorSenseRange_IconType_Water",       "20.0");
-    Param("SurvivorSenseRange_IconType_Loot",        "20.0");
+    Param("SurvivorSenseRange_IconType_Loot",        "800.0");
     Param("SurvivorSenseRange_IconType_Electricity", "20.0");
     Param("SurvivorSenseRange_IconType_Decoy",       "20.0");
     Param("SurvivorSenseRange_IconType_Spawner",     "20.0");
@@ -202,8 +202,8 @@ sub main()
     Param("SurvivorSenseRange_IconType_HideArea",    "20.0");
 
 		// detection ranges for AIs:
-	Param("SurvivorSenseAIRange", "20.0"); // range of detecting active AI
-    Param("SurvivorSenseRestingAIRange", "10.0"); // range of detecting sleeping AI
+	Param("SurvivorSenseAIRange", "50.0"); // range of detecting active AI
+    Param("SurvivorSenseRestingAIRange", "50.0"); // range of detecting sleeping AI
 	
 		// Gui related
 	Param("SurvivorSenseAIIndicatorRange", "5.0"); //range of showing AI Indicators (shield icon)
